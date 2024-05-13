@@ -5,7 +5,10 @@
 #### 2024 - I
 
 ## Link despliegue
-.
+https://jwt-for-the-win-valentinaruiz-marianasalas.vercel.app/
+
+## Link Fork (usado para desplegar)
+https://github.com/MariSalas23/jwt-for-the-win-valentinaruiz-marianasalas.git
 
 ## Seguridad de Endpoints en Backend
 
