@@ -1,10 +1,7 @@
 const express = require('express');
 const jwt = require('jsonwebtoken');
-const cookieParser = require('cookie-parser');
-const verifySessionCookie = require('../middleware/verifySessionCookie');
-
+const jwtMiddleware = require('../middleware/jwtMiddleware');
 const router = express.Router();
-router.use(cookieParser());
 
 const secretKey = 'mysecretkey';
 
@@ -14,17 +11,29 @@ const credentials = {
 };
 
 router.post('/', (req, res) => {
+  try{
   const { email, password } = req.body;
 
+  if (!email || !password ) {
+    return res.status(400).json({ error: "Faltan parámetros obligatorios" });
+  }
+  
   if (email === credentials.email && password === credentials.password) {
     const token = jwt.sign({ email }, secretKey, { expiresIn: '1h' });
+   
+   
+        // Retornar el token en la respuesta
+        return res.status(200).json({ message: 'Inicio de sesión exitoso', token });
+      }
+      else{
+        return res.status(401).json({ message: 'Credenciales incorrectas' });
+      }
 
-    res.cookie('session_token', token, { httpOnly: true, maxAge: 3600000 }); 
+      } catch (error) {
+        console.error(error)
+        res.status(500).send(error)
+      }
     
-    res.json({ message: 'Inicio de sesión exitoso', token: token });
-  } else {
-    res.status(401).json({ error: 'Credenciales inválidas' });
-  }
-});
+  });
 
 module.exports = router;

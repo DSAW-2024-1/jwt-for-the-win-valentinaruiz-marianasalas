@@ -1,9 +1,9 @@
 const express = require('express');
 const router = express.Router();
-const verifySessionCookie = require('../middleware/verifySessionCookie');
+const jwtMiddleware = require('../middleware/jwtMiddleware');
 const users = require('../assets/users');
 
-router.get('/', verifySessionCookie, (req, res) => {
+router.get('/', jwtMiddleware, (req, res) => {
   const randomUsers = getRandomUsers(users, 5);
 
   res.json(randomUsers);

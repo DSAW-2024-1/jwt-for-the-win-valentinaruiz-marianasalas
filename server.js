@@ -1,7 +1,6 @@
 const express = require("express");
 const app = express();
 const cookieParser = require("cookie-parser");
-app.use(cookieParser());
 app.use(express.urlencoded({ extended: true })); // para acceder al body
 app.use(express.json());
 
@@ -17,11 +16,11 @@ app.use(logger);
 
 // Middleware
 
-const verifySessionCookie = require("./middleware/verifySessionCookie");
+const jwtMiddleware = require('./middleware/jwtMiddleware');
 
-app.use("/form", verifySessionCookie, formRouter);
-app.use("/profile", verifySessionCookie, profileRouter);
-app.use("/contacts", verifySessionCookie, contactsRouter);
+app.use("/form", jwtMiddleware, formRouter);
+app.use("/profile", jwtMiddleware, profileRouter);
+app.use("/contacts", jwtMiddleware, contactsRouter);
 
 // Callback
 
@@ -37,7 +36,7 @@ function logger(req, res, next) {
   next();
 }
 
-app.listen(3000, () => {
+app.listen(5900, () => {
   console.log("Server running on port 3000");
 });
 module.exports = app; 

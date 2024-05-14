@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
-const verifySessionCookie = require('../middleware/verifySessionCookie');
+const jwtMiddleware = require('../middleware/jwtMiddleware');
 
-router.get('/', verifySessionCookie, (req, res) => {
+router.get('/', jwtMiddleware, (req, res) => {
   const userProfile = {
     nombre: 'María',
     apellido: 'Perez',
