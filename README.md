@@ -10,7 +10,10 @@ https://jwt-for-the-win-valentinaruiz-marianasalas-woad.vercel.app/
 ## Link Fork (usado para desplegar)
 https://github.com/ValeRuizTo/jwt-for-the-win-valentinaruiz-marianasalas.git
 
-## Seguridad de Endpoints en Backend
+## Variable para el token
+![image](https://github.com/DSAW-2024-1/jwt-for-the-win-valentinaruiz-marianasalas/assets/157375030/2e90bd18-7b3d-431d-a222-8a3506d95fca)
+
+##Seguridad de Endpoints en Backend
 
 ### Objetivo
 Crear endpoints seguros en el backend utilizando una capa de seguridad basada en sesiones. Se debe exponer un endpoint para el inicio de sesión y asegurar los demás endpoints mediante la cookie de sesión que se devuelve cuando el usuario inicia sesión correctamente.
