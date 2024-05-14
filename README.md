@@ -6,7 +6,7 @@
 
 ## Link del despliegue
 https://jwt-for-the-win-valentinaruiz-marianasalas-woad.vercel.app/
-}
+
 ## Link Fork (usado para desplegar)
 https://github.com/ValeRuizTo/jwt-for-the-win-valentinaruiz-marianasalas.git
 
