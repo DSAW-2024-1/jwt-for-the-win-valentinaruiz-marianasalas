@@ -1,0 +1,33 @@
+const users = [
+    { nombre: "SAMUEL", apellido: "ACERO GARCIA" },
+    { nombre: "DAREK", apellido: "ALJURI MARTINEZ" },
+    { nombre: "JUAN FELIPE", apellido: "CEPEDA URIBE" },
+    { nombre: "ANA MARIA", apellido: "CHAVES PEREZ" },
+    { nombre: "CARLOS DAVID", apellido: "CRUZ PAVAS" },
+    { nombre: "DIEGO NORBERTO", apellido: "DIAZ ALGARIN" },
+    { nombre: "JORGE ESTEBAN", apellido: "DIAZ BERNAL" },
+    { nombre: "DAVID ESTEBAN", apellido: "DIAZ VARGAS" },
+    { nombre: "JUAN JOSE", apellido: "FORERO PEÑA" },
+    { nombre: "SANTIAGO", apellido: "GUTIERREZ DE PIÑERES BARBOSA" },
+    { nombre: "SAMUEL ESTEBAN", apellido: "LOPEZ HUERTAS" },
+    { nombre: "MICHAEL STEVEN", apellido: "MEDINA FERNANDEZ" },
+    { nombre: "KATHERIN JULIANA", apellido: "MORENO CARVAJAL" },
+    { nombre: "JUAN PABLO", apellido: "MORENO PATARROYO" },
+    { nombre: "NICOLAS ESTEBAN", apellido: "MUÑOZ SENDOYA" },
+    { nombre: "SANTIAGO", apellido: "NAVARRO CUY" },
+    { nombre: "JUAN PABLO", apellido: "PARRADO MORALES" },
+    { nombre: "DANIEL SANTIAGO", apellido: "RAMIREZ CHINCHILLA" },
+    { nombre: "JUAN PABLO", apellido: "RESTREPO COCA" },
+    { nombre: "GABRIELA", apellido: "REYES GONZALEZ" },
+    { nombre: "JUAN JOSE", apellido: "RODRIGUEZ FALLA" },
+    { nombre: "VALENTINA", apellido: "RUIZ TORRES" },
+    { nombre: "MARIANA", apellido: "SALAS GUTIERREZ" },
+    { nombre: "SEBASTIAN", apellido: "SANCHEZ SANDOVAL" },
+    { nombre: "JOSUE DAVID", apellido: "SARMIENTO GUARNIZO" },
+    { nombre: "SANTIAGO", apellido: "SOLER PRADO" },
+    { nombre: "MARIA FERNANDA", apellido: "TAMAYO LOPEZ" },
+    { nombre: "DEIVID NICOLAS", apellido: "URREA LARA" },
+    { nombre: "ANDRÉS", apellido: "AZCONA" }
+];
+
+module.exports = users;

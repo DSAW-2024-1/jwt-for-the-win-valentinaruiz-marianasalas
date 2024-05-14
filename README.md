@@ -1,9 +1,19 @@
+[![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-24ddc0f5d75046c5622901739e7c5dd533143b0c8e959d652212380cedb1ea36.svg)](https://classroom.github.com/a/ajKCO3Oe)
 # Desarrollo de Aplicaciones Web
-## NOMBRE_DE_LOS_ESTUDIANTES
+## VALENTINA RUIZ Y MARIANA SALAS
 ### Universidad de La Sabana
 #### 2024 - I
 
-## Seguridad de Endpoints en Backend
+## Link del despliegue
+https://jwt-for-the-win-valentinaruiz-marianasalas-woad.vercel.app/
+
+## Link Fork (usado para desplegar)
+https://github.com/ValeRuizTo/jwt-for-the-win-valentinaruiz-marianasalas.git
+
+## Variable para el token
+![image](https://github.com/DSAW-2024-1/jwt-for-the-win-valentinaruiz-marianasalas/assets/157375030/2e90bd18-7b3d-431d-a222-8a3506d95fca)
+
+##Seguridad de Endpoints en Backend
 
 ### Objetivo
 Crear endpoints seguros en el backend utilizando una capa de seguridad basada en sesiones. Se debe exponer un endpoint para el inicio de sesión y asegurar los demás endpoints mediante la cookie de sesión que se devuelve cuando el usuario inicia sesión correctamente.
