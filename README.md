@@ -4,7 +4,7 @@
 ### Universidad de La Sabana
 #### 2024 - I
 
-## Link despliegue
+## Link del despliegue
 https://jwt-for-the-win-valentinaruiz-marianasalas.vercel.app/
 
 ## Link Fork (usado para desplegar)
